@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB05B5481DF76BC5007D17F6 /* Log File.rtf in Resources */ = {isa = PBXBuildFile; fileRef = EB05B5471DF76BC5007D17F6 /* Log File.rtf */; };
+		EB1C93461D50F730000099B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1C93451D50F730000099B1 /* AppDelegate.m */; };
+		EB1C93491D50F730000099B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1C93481D50F730000099B1 /* main.m */; };
+		EB1C934C1D50F730000099B1 /* Video_To_Audio_Converter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB1C934A1D50F730000099B1 /* Video_To_Audio_Converter.xcdatamodeld */; };
+		EB1C934E1D50F730000099B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1C934D1D50F730000099B1 /* Assets.xcassets */; };
+		EB1C93511D50F730000099B1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB1C934F1D50F730000099B1 /* MainMenu.xib */; };
+		EB1C935C1D50F730000099B1 /* Video_To_Audio_ConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1C935B1D50F730000099B1 /* Video_To_Audio_ConverterTests.m */; };
+		EB1C93671D50F730000099B1 /* Video_To_Audio_ConverterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1C93661D50F730000099B1 /* Video_To_Audio_ConverterUITests.m */; };
+		EB1C93781D50FAAC000099B1 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1C93771D50FAAC000099B1 /* AppController.m */; };
+		EB1C937C1D5105EA000099B1 /* MainInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1C937B1D5105EA000099B1 /* MainInterfaceController.m */; };
+		EBC993AA1D58DF630011BB0F /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC993A91D58DF630011BB0F /* AVKit.framework */; };
+		EBC993AC1D58DF690011BB0F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC993AB1D58DF690011BB0F /* AVFoundation.framework */; };
+		EBC993AE1D58DF9C0011BB0F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC993AD1D58DF9C0011BB0F /* QuartzCore.framework */; };
+		EBC993B01D58DFB70011BB0F /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC993AF1D58DFB70011BB0F /* QTKit.framework */; };
+		EBDF61E51D521952002FA9AE /* FileObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDF61E41D521952002FA9AE /* FileObject.m */; };
+		EBDF61E91D52197D002FA9AE /* MediaFile.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDF61E81D52197D002FA9AE /* MediaFile.m */; };
+		EBDF61ED1D522EC2002FA9AE /* DragAndDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDF61EC1D522EC2002FA9AE /* DragAndDropView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB1C93581D50F730000099B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB1C93391D50F72F000099B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB1C93401D50F72F000099B1;
+			remoteInfo = "Video To Audio Converter";
+		};
+		EB1C93631D50F730000099B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB1C93391D50F72F000099B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB1C93401D50F72F000099B1;
+			remoteInfo = "Video To Audio Converter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB05B5471DF76BC5007D17F6 /* Log File.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "Log File.rtf"; sourceTree = "<group>"; };
+		EB1C93411D50F72F000099B1 /* Video To Audio Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Video To Audio Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1C93441D50F730000099B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB1C93451D50F730000099B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB1C93481D50F730000099B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB1C934B1D50F730000099B1 /* Video_To_Audio_Converter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Video_To_Audio_Converter.xcdatamodel; sourceTree = "<group>"; };
+		EB1C934D1D50F730000099B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB1C93501D50F730000099B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		EB1C93521D50F730000099B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1C93571D50F730000099B1 /* Video To Audio ConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Video To Audio ConverterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1C935B1D50F730000099B1 /* Video_To_Audio_ConverterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Video_To_Audio_ConverterTests.m; sourceTree = "<group>"; };
+		EB1C935D1D50F730000099B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1C93621D50F730000099B1 /* Video To Audio ConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Video To Audio ConverterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1C93661D50F730000099B1 /* Video_To_Audio_ConverterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Video_To_Audio_ConverterUITests.m; sourceTree = "<group>"; };
+		EB1C93681D50F730000099B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1C93761D50FAAC000099B1 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		EB1C93771D50FAAC000099B1 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		EB1C937A1D5105EA000099B1 /* MainInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainInterfaceController.h; sourceTree = "<group>"; };
+		EB1C937B1D5105EA000099B1 /* MainInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainInterfaceController.m; sourceTree = "<group>"; };
+		EBC993A91D58DF630011BB0F /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		EBC993AB1D58DF690011BB0F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EBC993AD1D58DF9C0011BB0F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EBC993AF1D58DFB70011BB0F /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		EBDF61E31D521952002FA9AE /* FileObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileObject.h; sourceTree = "<group>"; };
+		EBDF61E41D521952002FA9AE /* FileObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileObject.m; sourceTree = "<group>"; };
+		EBDF61E71D52197D002FA9AE /* MediaFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFile.h; sourceTree = "<group>"; };
+		EBDF61E81D52197D002FA9AE /* MediaFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaFile.m; sourceTree = "<group>"; };
+		EBDF61EB1D522EC2002FA9AE /* DragAndDropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragAndDropView.h; sourceTree = "<group>"; };
+		EBDF61EC1D522EC2002FA9AE /* DragAndDropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragAndDropView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB1C933E1D50F72F000099B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC993B01D58DFB70011BB0F /* QTKit.framework in Frameworks */,
+				EBC993AE1D58DF9C0011BB0F /* QuartzCore.framework in Frameworks */,
+				EBC993AC1D58DF690011BB0F /* AVFoundation.framework in Frameworks */,
+				EBC993AA1D58DF630011BB0F /* AVKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1C93541D50F730000099B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1C935F1D50F730000099B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB1C93381D50F72F000099B1 = {
+			isa = PBXGroup;
+			children = (
+				EBC993AF1D58DFB70011BB0F /* QTKit.framework */,
+				EBC993AD1D58DF9C0011BB0F /* QuartzCore.framework */,
+				EBC993AB1D58DF690011BB0F /* AVFoundation.framework */,
+				EBC993A91D58DF630011BB0F /* AVKit.framework */,
+				EB1C93431D50F72F000099B1 /* Video To Audio Converter */,
+				EB1C935A1D50F730000099B1 /* Video To Audio ConverterTests */,
+				EB1C93651D50F730000099B1 /* Video To Audio ConverterUITests */,
+				EB1C93421D50F72F000099B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB1C93421D50F72F000099B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C93411D50F72F000099B1 /* Video To Audio Converter.app */,
+				EB1C93571D50F730000099B1 /* Video To Audio ConverterTests.xctest */,
+				EB1C93621D50F730000099B1 /* Video To Audio ConverterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB1C93431D50F72F000099B1 /* Video To Audio Converter */ = {
+			isa = PBXGroup;
+			children = (
+				EB05B5471DF76BC5007D17F6 /* Log File.rtf */,
+				EBDF61E61D521963002FA9AE /* File Object */,
+				EBDF61EA1D521988002FA9AE /* Media Files */,
+				EB1C93741D50FA8B000099B1 /* App Delegate */,
+				EB1C934D1D50F730000099B1 /* Assets.xcassets */,
+				EB1C93751D50FA95000099B1 /* Main Menu XIB */,
+				EB1C93521D50F730000099B1 /* Info.plist */,
+				EB1C934A1D50F730000099B1 /* Video_To_Audio_Converter.xcdatamodeld */,
+				EB1C93471D50F730000099B1 /* Supporting Files */,
+				EB1C93791D50FAAF000099B1 /* App Controller */,
+				EBDF61EE1D522EC8002FA9AE /* Drag And Drop View */,
+			);
+			path = "Video To Audio Converter";
+			sourceTree = "<group>";
+		};
+		EB1C93471D50F730000099B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C93481D50F730000099B1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB1C935A1D50F730000099B1 /* Video To Audio ConverterTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C935B1D50F730000099B1 /* Video_To_Audio_ConverterTests.m */,
+				EB1C935D1D50F730000099B1 /* Info.plist */,
+			);
+			path = "Video To Audio ConverterTests";
+			sourceTree = "<group>";
+		};
+		EB1C93651D50F730000099B1 /* Video To Audio ConverterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C93661D50F730000099B1 /* Video_To_Audio_ConverterUITests.m */,
+				EB1C93681D50F730000099B1 /* Info.plist */,
+			);
+			path = "Video To Audio ConverterUITests";
+			sourceTree = "<group>";
+		};
+		EB1C93741D50FA8B000099B1 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C93441D50F730000099B1 /* AppDelegate.h */,
+				EB1C93451D50F730000099B1 /* AppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		EB1C93751D50FA95000099B1 /* Main Menu XIB */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C934F1D50F730000099B1 /* MainMenu.xib */,
+				EB1C937A1D5105EA000099B1 /* MainInterfaceController.h */,
+				EB1C937B1D5105EA000099B1 /* MainInterfaceController.m */,
+			);
+			name = "Main Menu XIB";
+			sourceTree = "<group>";
+		};
+		EB1C93791D50FAAF000099B1 /* App Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C93761D50FAAC000099B1 /* AppController.h */,
+				EB1C93771D50FAAC000099B1 /* AppController.m */,
+			);
+			name = "App Controller";
+			sourceTree = "<group>";
+		};
+		EBDF61E61D521963002FA9AE /* File Object */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF61E31D521952002FA9AE /* FileObject.h */,
+				EBDF61E41D521952002FA9AE /* FileObject.m */,
+			);
+			name = "File Object";
+			sourceTree = "<group>";
+		};
+		EBDF61EA1D521988002FA9AE /* Media Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF61E71D52197D002FA9AE /* MediaFile.h */,
+				EBDF61E81D52197D002FA9AE /* MediaFile.m */,
+			);
+			name = "Media Files";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		EBDF61EE1D522EC8002FA9AE /* Drag And Drop View */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF61EB1D522EC2002FA9AE /* DragAndDropView.h */,
+				EBDF61EC1D522EC2002FA9AE /* DragAndDropView.m */,
+			);
+			name = "Drag And Drop View";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB1C93401D50F72F000099B1 /* Video To Audio Converter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1C936B1D50F730000099B1 /* Build configuration list for PBXNativeTarget "Video To Audio Converter" */;
+			buildPhases = (
+				EB1C933D1D50F72F000099B1 /* Sources */,
+				EB1C933E1D50F72F000099B1 /* Frameworks */,
+				EB1C933F1D50F72F000099B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Video To Audio Converter";
+			productName = "Video To Audio Converter";
+			productReference = EB1C93411D50F72F000099B1 /* Video To Audio Converter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB1C93561D50F730000099B1 /* Video To Audio ConverterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1C936E1D50F730000099B1 /* Build configuration list for PBXNativeTarget "Video To Audio ConverterTests" */;
+			buildPhases = (
+				EB1C93531D50F730000099B1 /* Sources */,
+				EB1C93541D50F730000099B1 /* Frameworks */,
+				EB1C93551D50F730000099B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB1C93591D50F730000099B1 /* PBXTargetDependency */,
+			);
+			name = "Video To Audio ConverterTests";
+			productName = "Video To Audio ConverterTests";
+			productReference = EB1C93571D50F730000099B1 /* Video To Audio ConverterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB1C93611D50F730000099B1 /* Video To Audio ConverterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1C93711D50F730000099B1 /* Build configuration list for PBXNativeTarget "Video To Audio ConverterUITests" */;
+			buildPhases = (
+				EB1C935E1D50F730000099B1 /* Sources */,
+				EB1C935F1D50F730000099B1 /* Frameworks */,
+				EB1C93601D50F730000099B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB1C93641D50F730000099B1 /* PBXTargetDependency */,
+			);
+			name = "Video To Audio ConverterUITests";
+			productName = "Video To Audio ConverterUITests";
+			productReference = EB1C93621D50F730000099B1 /* Video To Audio ConverterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB1C93391D50F72F000099B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Raphael Fontenelle";
+				TargetAttributes = {
+					EB1C93401D50F72F000099B1 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					EB1C93561D50F730000099B1 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = EB1C93401D50F72F000099B1;
+					};
+					EB1C93611D50F730000099B1 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = EB1C93401D50F72F000099B1;
+					};
+				};
+			};
+			buildConfigurationList = EB1C933C1D50F72F000099B1 /* Build configuration list for PBXProject "Video To Audio Converter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB1C93381D50F72F000099B1;
+			productRefGroup = EB1C93421D50F72F000099B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB1C93401D50F72F000099B1 /* Video To Audio Converter */,
+				EB1C93561D50F730000099B1 /* Video To Audio ConverterTests */,
+				EB1C93611D50F730000099B1 /* Video To Audio ConverterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB1C933F1D50F72F000099B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB05B5481DF76BC5007D17F6 /* Log File.rtf in Resources */,
+				EB1C934E1D50F730000099B1 /* Assets.xcassets in Resources */,
+				EB1C93511D50F730000099B1 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1C93551D50F730000099B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1C93601D50F730000099B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB1C933D1D50F72F000099B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1C93491D50F730000099B1 /* main.m in Sources */,
+				EB1C934C1D50F730000099B1 /* Video_To_Audio_Converter.xcdatamodeld in Sources */,
+				EBDF61E51D521952002FA9AE /* FileObject.m in Sources */,
+				EB1C937C1D5105EA000099B1 /* MainInterfaceController.m in Sources */,
+				EB1C93461D50F730000099B1 /* AppDelegate.m in Sources */,
+				EBDF61ED1D522EC2002FA9AE /* DragAndDropView.m in Sources */,
+				EBDF61E91D52197D002FA9AE /* MediaFile.m in Sources */,
+				EB1C93781D50FAAC000099B1 /* AppController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1C93531D50F730000099B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1C935C1D50F730000099B1 /* Video_To_Audio_ConverterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1C935E1D50F730000099B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1C93671D50F730000099B1 /* Video_To_Audio_ConverterUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB1C93591D50F730000099B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB1C93401D50F72F000099B1 /* Video To Audio Converter */;
+			targetProxy = EB1C93581D50F730000099B1 /* PBXContainerItemProxy */;
+		};
+		EB1C93641D50F730000099B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB1C93401D50F72F000099B1 /* Video To Audio Converter */;
+			targetProxy = EB1C93631D50F730000099B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB1C934F1D50F730000099B1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB1C93501D50F730000099B1 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB1C93691D50F730000099B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EB1C936A1D50F730000099B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EB1C936C1D50F730000099B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Video To Audio Converter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "raphael.fontenelle.Video-To-Audio-Converter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EB1C936D1D50F730000099B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Video To Audio Converter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "raphael.fontenelle.Video-To-Audio-Converter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EB1C936F1D50F730000099B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Video To Audio ConverterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "raphael.fontenelle.Video-To-Audio-ConverterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Video To Audio Converter.app/Contents/MacOS/Video To Audio Converter";
+			};
+			name = Debug;
+		};
+		EB1C93701D50F730000099B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Video To Audio ConverterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "raphael.fontenelle.Video-To-Audio-ConverterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Video To Audio Converter.app/Contents/MacOS/Video To Audio Converter";
+			};
+			name = Release;
+		};
+		EB1C93721D50F730000099B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Video To Audio ConverterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "raphael.fontenelle.Video-To-Audio-ConverterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Video To Audio Converter";
+			};
+			name = Debug;
+		};
+		EB1C93731D50F730000099B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Video To Audio ConverterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "raphael.fontenelle.Video-To-Audio-ConverterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Video To Audio Converter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB1C933C1D50F72F000099B1 /* Build configuration list for PBXProject "Video To Audio Converter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1C93691D50F730000099B1 /* Debug */,
+				EB1C936A1D50F730000099B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1C936B1D50F730000099B1 /* Build configuration list for PBXNativeTarget "Video To Audio Converter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1C936C1D50F730000099B1 /* Debug */,
+				EB1C936D1D50F730000099B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1C936E1D50F730000099B1 /* Build configuration list for PBXNativeTarget "Video To Audio ConverterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1C936F1D50F730000099B1 /* Debug */,
+				EB1C93701D50F730000099B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1C93711D50F730000099B1 /* Build configuration list for PBXNativeTarget "Video To Audio ConverterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1C93721D50F730000099B1 /* Debug */,
+				EB1C93731D50F730000099B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB1C934A1D50F730000099B1 /* Video_To_Audio_Converter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB1C934B1D50F730000099B1 /* Video_To_Audio_Converter.xcdatamodel */,
+			);
+			currentVersion = EB1C934B1D50F730000099B1 /* Video_To_Audio_Converter.xcdatamodel */;
+			path = Video_To_Audio_Converter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EB1C93391D50F72F000099B1 /* Project object */;
+}
