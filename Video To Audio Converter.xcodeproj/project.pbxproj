@@ -131,6 +131,7 @@
 		EB1C93431D50F72F000099B1 /* Video To Audio Converter */ = {
 			isa = PBXGroup;
 			children = (
+				EBDCC1152323472700221F4F /* New Group */,
 				EB05B5471DF76BC5007D17F6 /* Log File.rtf */,
 				EBDF61E61D521963002FA9AE /* File Object */,
 				EBDF61EA1D521988002FA9AE /* Media Files */,
@@ -198,6 +199,13 @@
 				EB1C93771D50FAAC000099B1 /* AppController.m */,
 			);
 			name = "App Controller";
+			sourceTree = "<group>";
+		};
+		EBDCC1152323472700221F4F /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 		EBDF61E61D521963002FA9AE /* File Object */ = {
