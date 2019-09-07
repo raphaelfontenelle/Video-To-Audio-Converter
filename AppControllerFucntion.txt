@@ -1,0 +1,47 @@
+    NSOpenPanel* openPanel = [NSOpenPanel openPanel];
+
+    [openPanel setCanChooseFiles:NO];
+    
+    if (allowMultipleSelectio){
+        
+        [openPanel setAllowsMultipleSelection:YES];
+    
+    } else {
+        
+        [openPanel setAllowsMultipleSelection:NO];
+    }
+    
+    [openPanel setCanChooseDirectories:YES];
+    
+    __block NSArray<NSURL *> *openFilesPathURL = nil;
+
+    [openPanel beginSheetModalForWindow:[[AppDelegate sharedAppDelegate] mainWindow] completionHandler:^(NSInteger result){
+        
+        if (result == NSFileHandlingPanelOKButton) {
+            
+            openFilesPathURL = [openPanel URLs];
+            
+            NSLog(@"URL returned from dialog: %@", openFilesPathURL);
+            
+            NSString *s=[[openPanel URL] path];
+            
+            //test fix it
+            
+            Restore old file from zip backupt I change it. This part wat changed.
+            
+                //NSString *testPath = [openFilesPathURL str
+            
+                //try this, imageURL = [imageURL stringByReplacingPercentEscapesUsingEncoding:NSAsciiStringEncoding]
+            
+            //end fix
+            
+            NSLog(@"path to file: %@", s);
+            
+            success(openFilesPathURL);
+            
+        } else if (result == NSFileHandlingPanelCancelButton) {
+            
+            cancel();
+            
+        }
+    }];

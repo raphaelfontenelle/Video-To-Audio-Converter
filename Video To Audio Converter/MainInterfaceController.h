@@ -21,6 +21,4 @@
  */
 + (MainInterfaceController *)sharedMainInterfaceController;
 
-- (IBAction)convertVideoToAudioButton:(id)sender;
-
 @end

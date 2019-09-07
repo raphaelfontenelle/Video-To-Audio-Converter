@@ -24,8 +24,7 @@
     self = [super initWithCoder:coder];
     
     if (self){
-        //NSString *pboardType = NSCreateFileContentsPboardType(@"mov");
-        
+
         self.appController = [AppController sharedAppController];
         
         [self registerForDraggedTypes:@[NSFilenamesPboardType]];

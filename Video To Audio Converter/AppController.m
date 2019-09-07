@@ -57,18 +57,16 @@ static AppController *_singletonAppController;
     return _singletonAppController;
 }
 
-// Fix - name of method - put a N
-// Fix - path with tab in the name
-- (void)showOpenDialogWithMultipleSelectio:(BOOL)allowMultipleSelectio successBlock:(void (^)(NSArray<NSURL *> * urlsList))success cancelBlock:(void(^)())cancel
+- (void)showOpenDialogWithMultipleSelection:(BOOL)allowMultipleSelectio successBlock:(void (^)(NSArray<NSURL *> * urlsList))success cancelBlock:(void(^)())cancel
 {
     NSOpenPanel* openPanel = [NSOpenPanel openPanel];
-
+    
     [openPanel setCanChooseFiles:NO];
     
     if (allowMultipleSelectio){
         
         [openPanel setAllowsMultipleSelection:YES];
-    
+        
     } else {
         
         [openPanel setAllowsMultipleSelection:NO];
@@ -77,18 +75,16 @@ static AppController *_singletonAppController;
     [openPanel setCanChooseDirectories:YES];
     
     __block NSArray<NSURL *> *openFilesPathURL = nil;
-
+    
     [openPanel beginSheetModalForWindow:[[AppDelegate sharedAppDelegate] mainWindow] completionHandler:^(NSInteger result){
         
         if (result == NSFileHandlingPanelOKButton) {
             
             openFilesPathURL = [openPanel URLs];
             
-            NSLog(@"URL returned from dialog: %@", openFilesPathURL);
+            NSString *pathToFile=[[openPanel URL] path];
             
-            NSString *s=[[openPanel URL] path];
-            
-            NSLog(@"path to file: %@", s);
+            NSMutableArray *openFilesPathURL = [NSMutableArray arrayWithObject:pathToFile];
             
             success(openFilesPathURL);
             
@@ -119,37 +115,27 @@ static AppController *_singletonAppController;
         switch (exportSession.status) {
                 
             case AVAssetWriterStatusCompleted:{
-                
-                //NSLog(@"Done");
-                
+           
                 break;
             }
                 
             case AVAssetExportSessionStatusCancelled: {
-                
-                //NSLog(@"Cancel");
                 
                 break;
             }
                 
             case AVAssetExportSessionStatusFailed:{
             
-                //NSLog(@"Failed");
-                
                 break;
              
             }
                 
             case AVAssetExportSessionStatusUnknown:{
 
-                //NSLog(@"Unknown");
-                
                 break;
             }
                 
             case AVAssetExportSessionStatusWaiting:{
-                
-                //NSLog(@"Wating");
                 
                 break;
             }
@@ -198,29 +184,32 @@ static AppController *_singletonAppController;
         
         media.checked = true;
     }
+}
+
+- (IBAction)clearAllButton:(id)sender{
     
+    for (MediaFile *media in self.mediaFilesList) {
+        
+        media.checked = false;
+    }
     
 }
 
 - (IBAction)convertButton:(id)sender {
     
-    [self showOpenDialogWithMultipleSelectio:NO successBlock:^(NSArray<NSURL *> *urlsList) {
+    [self showOpenDialogWithMultipleSelection:NO successBlock:^(NSArray<NSURL *> *urlsList) {
         
          self.destinationFolder = urlsList[0];
          
          for (__block MediaFile *media in self.mediaFilesList) {
              
              if (media.checked){
-             
                 dispatch_sync(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-                 //dispatch_sync(dispatch_get_main_queue(), ^{
-                 
+       
                      @try {
-                     
-                         NSURL *outputURL = [FileObject makeOutputURLWithPath:[self.destinationFolder absoluteString] andFileName:media.name andExtension:@"m4a"];
                          
-                         NSLog(@"Created output path: %@", outputURL);
-                         
+                         NSURL *outputURL = [FileObject makeOutputURLWithPath:self.destinationFolder andFileName:media.name andExtension:@"mp4"];
+                        
                          if ([FileObject checkIfFileAlreadyExistsWithPath:[outputURL absoluteString]]){
                              
                              media.status = @"File Already Exists";
@@ -232,8 +221,6 @@ static AppController *_singletonAppController;
                          
                          [self convertVideoToAudioWithInputURL:media.fileObject.fileURL outputURL:outputURL handler:^(AVAssetExportSession *assetExportSession) {
                          
-                             NSLog(@"assetExportSession: %ld", (long)assetExportSession.status);
-                             
                             switch (assetExportSession.status) {
                                    
                                      
@@ -282,8 +269,6 @@ static AppController *_singletonAppController;
                                      break;
                                  }
                              }
-                             
-                             //[self updateArrayControllers];
                         }];
                          
                      } @catch (NSException *exception) {
@@ -291,8 +276,7 @@ static AppController *_singletonAppController;
                          media.status = @"Failed";
                          
                      } @finally {
-                         
-                         //[self updateArrayControllers];
+                        
                      }
                      
                  });
@@ -300,7 +284,6 @@ static AppController *_singletonAppController;
          }
         
     } cancelBlock:^{
-        
         
     }];
 }
@@ -358,30 +341,5 @@ static AppController *_singletonAppController;
         _audioFilesList = [audioFilesList mutableCopy];
     }
 }
-
-/*
- - (NSURL *)showSaveDialog(void (^)(NSURL * url))urlBlock
- {
- NSSavePanel *savePanel = [NSSavePanel savePanel];
- 
- [savePanel setCanCreateDirectories:YES];
- 
- [savePanel setCanSelectHiddenExtension:NO];
- 
- __block NSURL *saveFilePathURL = nil;
- 
- [savePanel beginSheetModalForWindow:self.appDelegate.window completionHandler:^(NSInteger result) {
- 
- if (result == NSFileHandlingPanelOKButton) {
- 
- saveFilePathURL = [savePanel URL];
- 
- urlBlock(saveFilePathURL);
- 
- }
- }];
- }
- 
- */
 
 @end

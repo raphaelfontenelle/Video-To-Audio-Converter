@@ -74,7 +74,7 @@
  *  @param successBlock Executed when user press OK button in the open dialog window
  *  @param cancelBlock  Execeuted when user press Cancel button in the dialog window
  */
-- (void)showOpenDialogWithMultipleSelectio:(BOOL)allowMultipleSelectio successBlock:(void (^)(NSArray<NSURL *> * urlsList))success cancelBlock:(void(^)())cancel;
+- (void)showOpenDialogWithMultipleSelection:(BOOL)allowMultipleSelectio successBlock:(void (^)(NSArray<NSURL *> * urlsList))success cancelBlock:(void(^)())cancel;
 
 /**
  *  Convert video to audio.
@@ -101,14 +101,7 @@
 
 - (IBAction)convertButton:(id)sender;
 
-
+- (IBAction)clearAllButton:(id)sender;
 
 @end
-
-/**
- *  Open save dialog painel and returns the path in URL format.
- *
- *  @return URL with the path to save the file.
- */
-//- (NSURL *)showSaveDialog;
 

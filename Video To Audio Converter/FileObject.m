@@ -46,12 +46,8 @@
         NSDictionary *attributesDictionary = [FileObject getFileAttributes:fileString];
     
         self.modificationDate = attributesDictionary[NSFileModificationDate];
-        
-        NSLog(@"modificationDate: %@", self.modificationDate);
-        
+  
         self.creationDate = attributesDictionary[NSFileCreationDate];
-        
-        NSLog(@"creationDate: %@", self.creationDate);
     
     }
     
@@ -96,8 +92,6 @@
     return [[NSFileManager defaultManager] fileExistsAtPath:[fileNamePath stringByRemovingPercentEncoding]];
 }
 
-
-//Not finished need to create a file with next integer
 + (NSURL *)createFileName:(NSURL *)fileURL
 {
     NSString* fileNameWithExtension = fileURL.lastPathComponent;
